@@ -12,5 +12,5 @@ all:
 clean:
 	make -C $(KERNEL_DIR) M=$(PWD) clean
 install:
-	sudo insmod ./bce.ko
+	insmod ./bce.ko
 	
