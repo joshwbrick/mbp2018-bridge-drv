@@ -12,4 +12,4 @@ all:
 clean:
 	make -C $(KERNEL_DIR) M=$(PWD) clean
 install:
-	insmod ./bce.ko
+	/run/current-system/sw/bin/insmod ./bce.ko
