@@ -6,11 +6,11 @@ MY_CFLAGS += -DWITHOUT_NVME_PATCH
 ccflags-y += ${MY_CFLAGS}
 CC += ${MY_CFLAGS}
 
-all:
+modules:
 	make -C $(KERNEL_DIR) M=$(PWD) modules
 
 clean:
 	make -C $(KERNEL_DIR) M=$(PWD) clean
-install:
-	ls
+modules_install:
+	cp ./bce.ko $(INSTALL_MOD_PATH)
 	
