@@ -10,5 +10,5 @@ modules:
 clean:
 	make -C $(KERNEL_DIR) M=$(PWD) clean
 modules_install:
-	echo $(INSTALL_DIR)
+	cp ./bce.ko ../bce.ko
 	
